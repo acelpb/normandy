@@ -94,8 +94,18 @@ working:
 
 ## Deploying
 
-`make build` produces a fully static site in `dist/`. Copy its contents to the
-web root served by nginx. Configure nginx to serve `404.html` for missing pages
+```sh
+make publish                       # build, check URLs, upload dist/ with rsync
+make publish RSYNC_FLAGS=-rltvzn   # dry run: list what would be uploaded
+```
+
+`make publish` uploads the contents of `dist/` to `/var/www/root/` on the
+`ac` SSH host (acelpb.com), the root nginx serves for acelpb.com. That folder
+is owned by `nginx`, so the remote rsync runs as `sudo -u nginx`. Override
+`DEPLOY_HOST` / `DEPLOY_PATH` if needed.
+
+The upload never deletes files on the server; files from earlier builds stay
+until removed by hand. nginx should serve `404.html` for missing pages
 (`error_page 404 /404.html;`).
 
 ## Theme

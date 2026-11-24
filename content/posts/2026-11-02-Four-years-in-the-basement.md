@@ -17,7 +17,7 @@ The disadvantage of the standard paper calendar is of course that it sits at hom
 
 
 I thought about using a calendar on my phone or on a tablet, but I really wanted the calendar to be visible without having to take any active steps.
-I know myself, and in my confidence I can easily convince myself that there is nothing important and not look at the calendar. It has to be displayed at all times. 
+I know myself, I can confidently convince myself that there is nothing important and not look at the calendar. It has to be displayed at all times. 
 In order to guarantee this, while also being easy on the power consumption I decided to go for an e-ink display, and looking around I found a nice combination of devices which I ordered. That was in March 2023.
 
 

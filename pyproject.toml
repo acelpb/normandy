@@ -1,0 +1,13 @@
+[project]
+name = "acelpb-blog"
+version = "2.0.0"
+description = "Source of https://acelpb.com, a static blog built with Pelican."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pelican[markdown]>=4.12",
+    "pyyaml>=6.0",
+]
+
+[tool.uv]
+package = false

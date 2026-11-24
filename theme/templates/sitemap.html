@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>{{ SITEURL }}/</loc></url>
+<url><loc>{{ SITEURL }}/{{ ARCHIVES_URL }}</loc></url>
+{% for p in pages %}<url><loc>{{ SITEURL }}/{{ p.url }}</loc></url>
+{% endfor %}{% for a in articles %}<url><loc>{{ SITEURL }}/{{ a.url }}</loc><lastmod>{{ a.date.strftime('%Y-%m-%d') }}</lastmod></url>
+{% endfor %}</urlset>

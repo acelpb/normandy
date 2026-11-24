@@ -1,6 +1,7 @@
-# node / npm
-node_modules
-*.log
+# python / uv
+.venv
+__pycache__
+*.pyc
 
-# phenomic build
+# pelican build
 dist

@@ -1,0 +1,5 @@
+            <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            by {{ article.author }}
+            {%- if article.tags %}
+              <br />Tags: {{ article.tags | join(', ') }}
+            {% endif -%}

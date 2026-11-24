@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title|striptags }} — {{ SITENAME }}{% endblock title %}
+{% block description %}{{ page.summary }}{% endblock %}
+{% block canonical %}<meta property="og:url" content="{{ SITEURL }}/{{ page.url }}" />{% endblock %}
+
+{%- block content %}
+      <h1>{{ page.title }}</h1>
+      {{ page.content }}
+{% endblock content -%}

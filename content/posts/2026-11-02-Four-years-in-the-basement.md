@@ -8,8 +8,8 @@ author:     "Augustin Borsu"
 
 
 Like many people, I have a TODO list of pet projects that keeps getting longer, and one of my long-time project has been to replace the paper calendar on the fridge. 
-My goal was simple, I really like having a physical calendar visible from the breakfast table. It helps to casually remind me of things and has helped me avoid embarrassing situations like being late for a school field trip or forgetting that it's my turn to bring the class' "healthy snack".
-The disadvantage of the standard paper calendar is of course that it sits at home. This means I need to remember to add events to it when I learn about them when I'm not home, and I can't check it when booking things. So to summarize, my business requirements were:
+My goal was simple: I really like having a physical calendar visible from the breakfast table. It helps to casually remind me of things and has helped me avoid embarrassing situations like being late for a school field trip or forgetting that it's my turn to bring the class' "healthy snack".
+The disadvantage of the standard paper calendar is of course that it sits at home. This means I need to remember to add events I hear about while I'm out, and I can't check it when booking things. So to summarize, my business requirements were:
 
 - physical calendar prominently visible from my breakfast station
 - updatable while on the go
@@ -17,7 +17,7 @@ The disadvantage of the standard paper calendar is of course that it sits at hom
 
 
 I thought about using a calendar on my phone or on a tablet, but I really wanted the calendar to be visible without having to take any active steps.
-I know myself, I can confidently convince myself that there is nothing important and not look at the calendar. It has to be displayed at all times. 
+I know myself, I can confidently convince myself that there is nothing important and not look at the calendar. The calendar must be visible without requiring me to unlock a screen or open an app.
 In order to guarantee this, while also being easy on the power consumption I decided to go for an e-ink display, and looking around I found a nice combination of devices which I ordered. That was in March 2023.
 
 
@@ -42,7 +42,7 @@ I felt it would allow some creativity on how to make sure the right information 
 
 ## Sunday afternoon: from SD card to first pixels
 
-The first hour was spent setting up the Raspberry. Creating a disk image using Raspberry Pi Imager on the Mac, Raspberry Pi OS Lite, Wi-Fi and SSH set in advance, and five minutes later a steady green LED. My son typed `ssh` for the first time and was "inside the Raspberry Pi". We named it `otocal` for Otomate and calendar!
+The first hour was spent setting up the Raspberry. We created a disk image using Raspberry Pi Imager on the Mac and Raspberry Pi OS Lite, Wi-Fi and SSH are set from the start, and five minutes later a steady green LED we can logon. My son typed `ssh` for the first time and was "inside the Raspberry Pi". We named it `otocal` for Otomate and calendar!
 
 Then came the good part: the bugs!
 
@@ -54,7 +54,7 @@ Then came the good part: the bugs!
 
 Before writing a line of code, we imagined what it would look like: the next four weeks, a zoom on today and tomorrow, birthdays in red, holidays as bars. If we still had time, a "phrase of the day" and a weather indicator. A couple of prompts later we had a first idea.
 
-I created a technical account on my self-hosted Nextcloud for the family calendars to live on (one per family member). So the Pi reads it over CalDAV with the `caldav` Python library. A few choices kept it simple and safe:
+I created a technical account on my self-hosted Nextcloud for the family calendars to live on (one per family member). The Pi reads the nextcloud calendar over CalDAV with the `caldav` Python library. A few choices kept it simple and safe:
 
 - **An app password**, dedicated and stored in a secret file.
 - **Initials instead of colours.** The screen has three colours, not one per person, so each family member's calendar gets a short prefix like `AB ·`.
@@ -89,8 +89,14 @@ My son left soon after but I kept going to make it just right:
 *The latest preview.*
 
 ## What's next
-Next up: measure the battery drain per cycle, check that the PiSugar truly cuts power when the Pi is off, and maybe swap the bit-banged SPI for hardware SPI to shorten each refresh. But honestly? It already works. It's on the table, it wakes itself up three times a day, and it tells us a joke. 
+Measure the battery drain per cycle, check that the PiSugar truly cuts power when the Pi is off, and maybe swap the bit-banged SPI for hardware SPI to shorten each refresh.
+On the non-programing side, figure out a way to make it less bulky and make a nice frame so that it blends in better. But honestly? It already works. It's on the table, it wakes itself up three times a day, and it tells us a joke. 
 
 
 ## Finally
-First thing my son did coming downstairs was to look at the calendar to read the joke of the day. At the same time, I gave the calendar a quick glance. No more forgotten events!
+The first thing my son did coming downstairs was to look at the calendar to read the joke of the day. At the same time, I gave the calendar a quick glance. No more forgotten events!
+
+
+![The e-ink calendar on the kitchen counter, in front of the old paper calendar still hanging on the fridge](../../assets/eink-calendar/frigo.jpg)
+
+*The new calendar, with its paper predecessor still on the fridge behind it.*

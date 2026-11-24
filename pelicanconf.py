@@ -9,10 +9,9 @@ engines keep working; `make check` verifies it (see scripts/check_urls.py).
 AUTHOR = "Augustin Borsu"
 SITENAME = "ACELPB"
 SITEURL = ""
-TWITTER = "AugustinBorsu"
 SOCIAL = [
-    ("Twitter", f"https://twitter.com/{TWITTER}"),
-    ("GitHub", "https://github.com/acelpb"),
+    ("LinkedIn", "https://www.linkedin.com/in/aborsu/"),
+    ("GitHub", "https://github.com/aborsu"),
     ("Source of this site", "https://github.com/acelpb/normandy"),
 ]
 

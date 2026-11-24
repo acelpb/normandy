@@ -119,7 +119,7 @@ Changes from upstream:
 - category, tag and author links removed (the site doesn't use them); the
   sidebar lists pages, archives, the RSS feed and the `SOCIAL` links from
   `pelicanconf.py`
-- Pelican 4 feed settings (`FEED_ALL_RSS`), Open Graph / Twitter meta tags
+- Pelican 4 feed settings (`FEED_ALL_RSS`), Open Graph meta tags (link previews)
 - homepage shows the intro from `content/pages/index.md` above the posts
 - removed the IE8 shim, legacy Google Analytics snippet, Disqus and favicon links
 - added `notfound.html` (404), `sitemap.html` and `eliza.html` (redirect)

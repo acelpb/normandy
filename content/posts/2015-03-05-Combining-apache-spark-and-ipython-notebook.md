@@ -24,7 +24,7 @@ sudo pacman -S python-pip<br />
 }
 </blockquote>
 
-<p>For the ones who like it, you can also add a logo-64x64.png file next to it that will be displayed in the top right corner of the notebook when using the kernell. (I downloaded the scala logo from the <a href="http://www.scala-lang.org/">scala homepage</a>.) and to make it all easier here is a copy of my <a href="https://github.com/aborsu985/ipython-kernels">kernels</a></p>
+<p>For the ones who like it, you can also add a logo-64x64.png file next to it that will be displayed in the top right corner of the notebook when using the kernell. (I downloaded the scala logo from the <a href="http://www.scala-lang.org/">scala homepage</a>.)</p>
 
 <p>Once you have this setup, using spark in ipython notebook is as easy as launching it :</p>
 <blockquote>
@@ -37,5 +37,5 @@ iython notebook
 %update<br />
 </blockquote>
 <p>This is actually the way to add all your dependencies to your project. Once this is done, you can import and create a spark context just like you would in a standalone scala application and use it just as you would the spark-shell.</p>
-<p>Here is my <a href="http://nbviewer.ipython.org/github/aborsu985/jupyter-notebooks/blob/master/Graphx%20Sandbox.ipynb">first spark notebook</a> as an example which you can also fork from my <a href="https://github.com/aborsu985/jupyter-notebooks">repo</a> </p>
+<p><em>The example notebook and kernel files that used to be linked here have since been deleted.</em></p>
 <p>Voilà !!! you can now easily sandbox your spark development.</p>

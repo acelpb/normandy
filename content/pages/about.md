@@ -31,4 +31,4 @@ It's a static site generated with [Pelican](https://getpelican.com/) from Markdo
 
 ## Say hello
 
-I'm always happy to chat about AI that actually works, automation, self-hosting, or a good game of Go. You can find me on [GitHub](https://github.com/aborsu) and [LinkedIn](https://www.linkedin.com/in/aborsu/).
+I'm always happy to chat about AI that actually works, automation, self-hosting, or a good game of Go. You can find me on [LinkedIn](https://www.linkedin.com/in/aborsu/) or by email a.borsu@THIS_SITE.com .
